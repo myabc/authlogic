@@ -4,10 +4,10 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "authlogic"
-    gem.summary = "A clean, simple, and unobtrusive ruby authentication solution."
+    gem.name = "novelys_authlogic"
+    gem.summary = "An experimental fork of Authlogic that aims to work with Rails 3 and MongoMapper (and other DBS in the future I hope)."
     gem.email = "bjohnson@binarylogic.com"
-    gem.homepage = "http://github.com/binarylogic/authlogic"
+    gem.homepage = "http://github.com/novelys/authlogic"
     gem.authors = ["Ben Johnson of Binary Logic"]
     gem.rubyforge_project = "authlogic"
     gem.add_dependency "activesupport"
