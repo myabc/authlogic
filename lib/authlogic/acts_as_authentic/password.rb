@@ -207,13 +207,10 @@ module Authlogic
       module Methods
         def self.included(klass)
           return if klass.crypted_password_field.nil?
-          
           klass.class_eval do
             include InstanceMethods
-            
             if validate_password_field
               validates_length_of :password, validates_length_of_password_field_options
-              
               if require_password_confirmation
                 validates_confirmation_of :password, validates_confirmation_of_password_field_options
                 validates_length_of :password_confirmation, validates_length_of_password_confirmation_field_options

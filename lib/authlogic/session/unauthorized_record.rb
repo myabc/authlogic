@@ -34,7 +34,7 @@ module Authlogic
       def credentials=(value)
         super
         values = value.is_a?(Array) ? value : [value]
-        self.unauthorized_record = values.first if values.first.class < ::ActiveRecord::Base
+        self.unauthorized_record = values.first if values.first.class < ::MongoMapper::Document
       end
       
       private

@@ -50,6 +50,6 @@ module Authlogic
       end
     end
     
-    ::ActiveRecord::Base.extend(Base) if defined?(::ActiveRecord)
+    # ::ActiveRecord::Base.extend(Base) if defined?(::ActiveRecord)
   end
 end

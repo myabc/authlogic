@@ -77,7 +77,7 @@ module Authlogic
           
           # This method will raise ActiveRecord::NotFound if no record is found.
           def find_using_perishable_token!(token, age = perishable_token_valid_for)
-            find_using_perishable_token(token, age) || raise(ActiveRecord::RecordNotFound)
+            find_using_perishable_token(token, age) || raise(StandardError) # || raise(ActiveRecord::RecordNotFound)
           end
         end
         

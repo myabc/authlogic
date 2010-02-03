@@ -1,4 +1,4 @@
-require "active_record"
+# require "active_record"
 
 AUTHLOGIC_PATH = File.dirname(__FILE__) + "/authlogic/"
 
