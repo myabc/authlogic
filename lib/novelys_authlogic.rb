@@ -1,6 +1,6 @@
 # require "active_record"
 
-AUTHLOGIC_PATH = File.dirname(__FILE__) + "/authlogic/"
+AUTHLOGIC_PATH = File.dirname(__FILE__) + "/novelys_authlogic/"
 
 [
  "i18n",
