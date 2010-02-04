@@ -1,4 +1,4 @@
-require "authlogic/i18n/translator"
+require "novelys_authlogic/i18n/translator"
 
 module Authlogic
   # This class allows any message in Authlogic to use internationalization. In earlier versions of Authlogic each message was translated via configuration.
